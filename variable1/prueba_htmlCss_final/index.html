@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+  En este archivo:
+  - PUEDE editar la estructura y el contenido de <body>.
+  - PUEDE cambiar las etiquetas actuales y su orden dentro del <body>.
+  - PUEDE agregar nuevas etiquetas, identificaciones y clases o envolver las existentes dentro del <body>.
+
+  Reglas:
+  - NO PUEDES editar el <head>.
+  - NO PUEDE agregar referencias externas adicionales (bibliotecas, marcos, etc.), esto se probará automáticamente.
+  - NO PUEDE agregar código javascript u hojas de estilo adicionales. La prueba solo copia sus archivos index.html y style.css.
+  - NO PUEDE eliminar etiquetas de plantilla (variables entre {}).
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Test</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="site.js"></script>
+  </head>
+  <body>
+    <!-- <img src="img/logo.png">
+    Dogos
+    {navlinks} -->
+    <main class="container">
+      <h1>{title}</h1>
+      <section class="cards">
+        <article>
+          <div>
+            {content1}
+          </div>
+          <a href="#"><img src="img/paw.png" />Learn more</a>
+        </article>
+        <article>
+          <div>
+            {content2}
+          </div>
+          <a href="#"><img src="img/paw.png" />Learn more</a>
+        </article>
+        <article>
+          <div>
+            {content3}
+          </div>
+          <a href="#"><img src="img/paw.png" />Learn more</a>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

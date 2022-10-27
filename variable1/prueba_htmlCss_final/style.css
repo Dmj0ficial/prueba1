@@ -1,0 +1,83 @@
+/**
+* Puede editar todo este archivo.
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --gray-0: #000000;
+  --gray-1: #222222;
+  --gray-2: #dddddd;
+  --gray-3: #fbfbfb;
+  --gray-4: #ffffff;
+  --primary: #8a2be2;
+  --secondary: #20d397;
+  --font-size-1: 1.5rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 1rem;
+  --font-weight-thin: 300;
+  --font-weight-bold: 600;
+  --font-weight-heavy: 800;
+  --spacer-1: 0.25rem;
+  --spacer-2: 0.5rem;
+  --spacer-3: 1rem;
+  --spacer-4: 1.5rem;
+  --spacer-5: 2rem;
+  --shadows: 7px 7px 7px rgba(0, 0, 0, 0.15);
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.44;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.cards article h2,
+.cards article p {
+  margin-bottom: 1rem;
+}
+.cards article {
+  padding: 1rem;
+  border: 1px solid var(--gray-2);
+  box-shadow: var(--shadows);
+  /* truco */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards article a {
+  display: block;
+  background: var(--primary);
+  color: var(--gray-4);
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.cards article a img {
+  width: 1.2rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
